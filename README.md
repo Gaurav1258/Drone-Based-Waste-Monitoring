@@ -11,18 +11,18 @@ The technology helps the government officials for keeping the surrounding clean 
 As we know our surroundings are not neat and clean which leads to various problems such as blockage of drains, polluted environment, unhealthy atmosphere, unhygienic environment and other problems. 
 This mainly occurred because municipality and government officials fail to clean the public places, so to solve the problem we propose an idea by which we can monitor our surroundings through drones. The drone will help us to identify where garbage is present in our surrounding this will be done by camera module present in the drone which will classify the image based on image classification model and their respective locations will be send to the government officials so that they can have the proper locations of the garbage beforehand and then they can clean it. This will help us to keep our surroundings neat and clean.  
 ### OBJECTIVES: 
-•	Real-time monitoring: IoT sensors on drones can provide real-time information on waste levels, helping waste management companies to optimize their collection routes and schedules. This can reduce fuel consumption and carbon emissions, while also improving the overall efficiency of waste management operations. 
-•	Environmental protection: Effective waste management through drones can reduce the negative impact of waste on the environment, including air and water pollution, greenhouse gas emissions, and damage to natural habitats. This can help protect the environment and promote sustainable development. 
-•	Efficient waste collection: Where municipal trucks of garbage cannot go, drones can help in finding the place and municipalities can send small vehicles to collect the garbage there. This reduces the time for heavy trucks to go the narrow roads and saves time. It maintains a high compaction rate. 
+- Real-time monitoring: IoT sensors on drones can provide real-time information on waste levels, helping waste management companies to optimize their collection routes and schedules. This can reduce fuel consumption and carbon emissions, while also improving the overall efficiency of waste management operations. 
+- Environmental protection: Effective waste management through drones can reduce the negative impact of waste on the environment, including air and water pollution, greenhouse gas emissions, and damage to natural habitats. This can help protect the environment and promote sustainable development. 
+- Efficient waste collection: Where municipal trucks of garbage cannot go, drones can help in finding the place and municipalities can send small vehicles to collect the garbage there. This reduces the time for heavy trucks to go the narrow roads and saves time. It maintains a high compaction rate. 
 
 ### Problem Identification in the Domain 
-1.  Data collection approach and strategies: 
+1. Data collection approach and strategies: 
   
-•        GITHUB dataset  
+- GITHUB dataset  
  
 Images collected from the Drone camera and converting them into a required dataset format. 
   
-2.  Data Analysis Approach 
+2. Data Analysis Approach 
   
 Choosing the best Deep Learning model where it identifies the percentage of waste as well as analyzing the waste present in the particular area so that the municipality must be alerted to clean that area and also introduce a garbage dustbin in that area for this we have used mobilenetV3 model for image classification. MobileNetV3 is a convolutional neural network architecture designed for efficient and lightweight computer vision tasks on mobile devices and embedded systems for drones. It is a state-of-the-art deep learning model that is optimized for running on low-power devices with limited computational resources and memory. MobileNetV3 for drones is used for a variety of computer vision applications, such as object detection, tracking, and recognition. The lightweight nature of the network allows it to be run in real-time on small computing devices, making it ideal for use on drones, which typically have limited computing power and battery life. 
   
