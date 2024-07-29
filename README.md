@@ -34,26 +34,26 @@ This will help to maintain a clean environment as no mentality change needs to b
  
 ### PROPOSED ARCHITECTURE – 
   
-•	Drone deployment: The first step in this architecture is to deploy drones equipped with high-resolution cameras to fly over designated areas and collect images of the waste. The drones can be manually operated or programmed to fly autonomously using GPS navigation. To cover a larger area, multiple drones can be used simultaneously. 
+- Drone deployment: The first step in this architecture is to deploy drones equipped with high-resolution cameras to fly over designated areas and collect images of the waste. The drones can be manually operated or programmed to fly autonomously using GPS navigation. To cover a larger area, multiple drones can be used simultaneously. 
  
-•	Image Transferring: The images captured by the drones are then send to the cloud for further processing. Cloud processing requires a stable internet connection and sufficient cloud resources. 
+- Image Transferring: The images captured by the drones are then send to the cloud for further processing. Cloud processing requires a stable internet connection and sufficient cloud resources. 
  
-•	Image analysis: The image data from the drone should be transmitted to the cloud or to the main pc  for further analysis. The cloud-based system will have a Deep Learning Model that can classify the waste into different categories such as plastic, metal, glass, organic, etc. and also detect the presence of waste. The Deep Learning Model is trained using a large dataset of waste images to ensure high accuracy. 
+- Image analysis: The image data from the drone should be transmitted to the cloud or to the main pc  for further analysis. The cloud-based system will have a Deep Learning Model that can classify the waste into different categories such as plastic, metal, glass, organic, etc. and also detect the presence of waste. The Deep Learning Model is trained using a large dataset of waste images to ensure high accuracy. 
  
-•	Waste Detection: Based on the classification results, the waste can be classified and detected. Now using this, the appropriate coordinates of the areas where waste was detected is further passed as an output from the DL model.  
+- Waste Detection: Based on the classification results, the waste can be classified and detected. Now using this, the appropriate coordinates of the areas where waste was detected is further passed as an output from the DL model.  
  
-•	Data analytics: The data collected from the drone and cloud-based system can be used to generate insights on the waste generation patterns, waste composition, and recycling rates. These insights can be used to optimize the waste management process and make informed decisions. For example, the data can be used to identify areas with high waste generation rates and prioritize waste management efforts accordingly. 
+- Data analytics: The data collected from the drone and cloud-based system can be used to generate insights on the waste generation patterns, waste composition, and recycling rates. These insights can be used to optimize the waste management process and make informed decisions. For example, the data can be used to identify areas with high waste generation rates and prioritize waste management efforts accordingly. 
  
-•	Maintenance and monitoring: The drones and the cloud-based system should be regularly maintained and monitored to ensure optimal performance and reliability. Any issues or faults should be promptly addressed to minimize downtime and ensure the smooth functioning of the system. Regular maintenance and monitoring can help extend the lifespan of the equipment and reduce the risk of costly repairs. 
+- Maintenance and monitoring: The drones and the cloud-based system should be regularly maintained and monitored to ensure optimal performance and reliability. Any issues or faults should be promptly addressed to minimize downtime and ensure the smooth functioning of the system. Regular maintenance and monitoring can help extend the lifespan of the equipment and reduce the risk of costly repairs. 
  
  
 ### Communication Model Used 
   
 Publisher-Subscriber 
 This model comprises three entities: Publishers, Brokers, and Consumers. 
-·       Publishers are the source of data. It sends the data to the topic which are managed by the broker. They are not aware of consumers. 
-·       Consumers subscribe to the topics which are managed by the broker. 
-·       Hence, Brokers responsibility is to accept data from publishers and send it to the appropriate consumers. The broker only has the information regarding the consumer to which a particular topic belongs to which the publisher is unaware of. 
+- Publishers are the source of data. It sends the data to the topic which are managed by the broker. They are not aware of consumers. 
+- Consumers subscribe to the topics which are managed by the broker. 
+- Hence, Brokers responsibility is to accept data from publishers and send it to the appropriate consumers. The broker only has the information regarding the consumer to which a particular topic belongs to which the publisher is unaware of. 
  
 The Publisher can be any component on the drone that generates data, such as a sensor or a flight controller. The Subscribers can be other components on the drone, such as an autopilot or a camera, or they can be external devices, such as a ground station or a remote controller. 
 The Publisher-Subscriber model in drones enables efficient and flexible communication between different components, allowing them to share information without the need for direct communication or knowledge of each other's existence. This can improve the overall performance and functionality of the drone, as well as make it easier to integrate with other devices and systems. 
